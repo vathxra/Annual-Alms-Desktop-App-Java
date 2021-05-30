@@ -1,0 +1,40 @@
+.button {
+-fx-background-color:#ffdc73;
+-fx-background-radius:30;
+}
+
+.button2{
+-fx-background-color:#ffbf00;
+-fx-background-radius:30;
+}
+
+.button3{
+-fx-background-color:#d60404;
+-fx-text-fill:white;
+-fx-background-radius:30;
+}
+
+.background{
+-fx-background-image:url("2.jpg");
+-fx-background-size:110% 100%;
+}
+
+.background1{
+-fx-background-image:url("4.jpg");
+-fx-background-size:108% 100%;
+}
+
+.background2{
+-fx-background-image:url("6.jpg");
+-fx-background-size:102% 100%;
+}
+
+.background3{
+-fx-background-image:url("3.jpg");
+-fx-background-size:107% 101%;
+}
+
+.background4{
+-fx-background-image:url("88.jpg");
+-fx-background-size:100% 100%;
+}

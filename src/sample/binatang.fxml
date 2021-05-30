@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="background1" stylesheets="@gaya.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.binatangController">
+   <children>
+      <Label layoutX="179.0" layoutY="59.0" prefHeight="36.0" prefWidth="243.0" text="BINATANG TERNAK" textFill="#c9baba">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="181.0" layoutY="161.0" prefHeight="26.0" prefWidth="44.0" text="Jenis" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Italic" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="jumlahField" layoutX="270.0" layoutY="128.0" opacity="0.7" />
+      <Button fx:id="hitungZakatButton" layoutX="251.0" layoutY="200.0" mnemonicParsing="false" onAction="#hitungZakatButtonOnAction" styleClass="button2" stylesheets="@gaya.css" text="HITUNG ZAKAT">
+         <font>
+            <Font name="Cambria Bold" size="12.0" />
+         </font></Button>
+      <TextArea fx:id="resultZakatField" editable="false" layoutX="167.0" layoutY="247.0" opacity="0.7" prefHeight="63.0" prefWidth="266.0" />
+      <RadioButton fx:id="kambingRB" layoutX="270.0" layoutY="165.0" mnemonicParsing="false" text="Kambing" textFill="WHITE">
+         <toggleGroup>
+            <ToggleGroup fx:id="RBjenis" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="sapiRB" layoutX="350.0" layoutY="165.0" mnemonicParsing="false" text="Sapi" textFill="WHITE" toggleGroup="$RBjenis" />
+      <Label layoutX="147.0" layoutY="128.0" prefHeight="26.0" prefWidth="111.0" text="Jumlah (ekor)" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Italic" size="17.0" />
+         </font>
+      </Label>
+      <Button fx:id="kembaliButton" layoutX="522.0" layoutY="361.0" mnemonicParsing="false" onAction="#kembaliButtonOnAction" styleClass="button3" stylesheets="@gaya.css" text="KEMBALI" textFill="WHITE" />
+      <Label layoutX="14.0" layoutY="358.0" text="*Kambing minimal 40 ekor, Sapi minimal 30 ekor.&#10;**Keduanya hewan yg digembalakan, bukan hewan yg diternak untuk diambil susunya." textFill="#c9b9b9">
+         <font>
+            <Font name="System Bold Italic" size="11.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
